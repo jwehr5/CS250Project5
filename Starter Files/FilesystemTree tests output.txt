@@ -1,0 +1,127 @@
+** INITIAL TREE LOADED FROM FILE **
+
+<C:>
+|     <dir1>
+|     |     <dir2>
+|     |     |     <dir3>
+|     |     |     |     <dir4>
+|     |     |     |     |     <dir10>
+|     |     |     |     |     |     file21
+|     |     |     |     |     |     file22
+|     |     |     |     |     <dir5>
+|     |     |     |     |     |     file11
+|     |     |     |     |     |     file12
+|     |     |     |     |     file10
+|     |     |     |     |     file9
+|     |     |     |     <dir9>
+|     |     |     |     |     file19
+|     |     |     |     |     file20
+|     |     |     |     file7
+|     |     |     |     file8
+|     |     |     <dir8>
+|     |     |     |     file17
+|     |     |     |     file18
+|     |     |     file22
+|     |     |     file5
+|     |     |     file6
+|     |     <dir7>
+|     |     |     file15
+|     |     |     file16
+|     |     |     file22
+|     |     file3
+|     |     file4
+|     <dir6>
+|     |     file13
+|     |     file14
+|     file1
+|     file2
+|     file22
+
+** INITIAL TREE STATS **
+
+Should be 10 directories, 25 files:
+Directories: 10
+Files: 25
+
+** TESTING REMOVE() **
+
+Remove file17 from C:/dir1/dir2/dir8: 1 [should be 1]
+Remove dir3 from C:/dir1/dir2: 1 [should be 1]
+Remove dir3 from C:/dir1/dir2: 0 [should be 0]
+Remove C:: 0 [should be 0]
+
+** TESTING MOVE() **
+
+Move dir6 from C: to C:/dir1/dir2: 1 [should be 1]
+Move file5 from C:/dir1/dir2 to C:/dir1: 1 [should be 1]
+Move file5 from C:/dir1 to C:/dir1: 0 [should be 0]
+Move dir99 from C:/dir1/dir2/dir6 to C:/dir1: 0 [should be 0]
+Move file15 from C:/dir1/dir7 to C:/dir6: 0 [should be 0]
+
+** TESTING COPY() **
+
+Copy file15 from C:/dir1/dir7 to C:/dir1/dir2/dir6: 1 [should be 1]
+Copy file15 from C:/dir1/dir7 to C:/dir1/dir2/dir6: 0 [should be 0]
+Copy dir2 from C:/dir1 to C:/dir1/dir2/dir8: 1 [should be 1]
+Copy file99 from C: to C:/dir1: 0 [should be 0]
+Copy file3 from C:/dir1 to C:/dir1: 0 [should be 0]
+
+** TESTING FIND() **
+
+Searching for dir6 starting at C::
+C:/dir1/dir2/dir6
+C:/dir1/dir2/dir8/dir2/dir6
+2 matches found. [should be 2]
+
+Searching for file13 starting at C::/dir1/dir2/dir8:
+C:/dir1/dir2/dir8/dir2/dir6/file13
+1 matches found. [should be 1]
+
+Searching for file22 starting at C::
+C:/file22
+C:/dir1/dir2/file22
+C:/dir1/dir2/dir8/dir2/file22
+C:/dir1/dir7/file22
+4 matches found. [should be 4]
+
+Searching for file99 starting at C::
+0 matches found. [should be 0]
+
+** FINAL TREE **
+
+<C:>
+|     <dir1>
+|     |     <dir2>
+|     |     |     <dir6>
+|     |     |     |     file13
+|     |     |     |     file14
+|     |     |     |     file15
+|     |     |     <dir8>
+|     |     |     |     <dir2>
+|     |     |     |     |     <dir6>
+|     |     |     |     |     |     file13
+|     |     |     |     |     |     file14
+|     |     |     |     |     |     file15
+|     |     |     |     |     <dir8>
+|     |     |     |     |     |     file18
+|     |     |     |     |     file22
+|     |     |     |     |     file6
+|     |     |     |     file18
+|     |     |     file22
+|     |     |     file6
+|     |     <dir7>
+|     |     |     file15
+|     |     |     file16
+|     |     |     file22
+|     |     file3
+|     |     file4
+|     |     file5
+|     file1
+|     file2
+|     file22
+
+** FINAL TREE STATS **
+
+Should be 8 directories, 21 files:
+Directories: 8
+Files: 21

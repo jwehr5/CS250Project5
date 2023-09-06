@@ -1,0 +1,35 @@
+* dir1 C:
+* dir2 C:/dir1
+* dir3 C:/dir1/dir2
+* dir4 C:/dir1/dir2/dir3
+* dir5 C:/dir1/dir2/dir3/dir4
+* dir6 C:
+* dir7 C:/dir1
+* dir8 C:/dir1/dir2
+* dir9 C:/dir1/dir2/dir3
+* dir10 C:/dir1/dir2/dir3/dir4
+file1 C:
+file2 C:
+file3 C:/dir1
+file4 C:/dir1
+file5 C:/dir1/dir2
+file6 C:/dir1/dir2
+file7 C:/dir1/dir2/dir3
+file8 C:/dir1/dir2/dir3
+file9 C:/dir1/dir2/dir3/dir4
+file10 C:/dir1/dir2/dir3/dir4
+file11 C:/dir1/dir2/dir3/dir4/dir5
+file12 C:/dir1/dir2/dir3/dir4/dir5
+file13 C:/dir6
+file14 C:/dir6
+file15 C:/dir1/dir7
+file16 C:/dir1/dir7
+file17 C:/dir1/dir2/dir8
+file18 C:/dir1/dir2/dir8
+file19 C:/dir1/dir2/dir3/dir9
+file20 C:/dir1/dir2/dir3/dir9
+file21 C:/dir1/dir2/dir3/dir4/dir10
+file22 C:/dir1/dir2/dir3/dir4/dir10
+file22 C:/dir1/dir7
+file22 C:/dir1/dir2
+file22 C:
