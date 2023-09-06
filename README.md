@@ -8,3 +8,5 @@ How to run the Program:
 
 Additional Information:
  * Project description can be found in the file: "Project Filesystem Simulator.docx"
+ * On line 24 of main.cpp you'll need to edit the file path so that it correctly points to the location of input.txt which is located in the Starter Files Folder.
+   
